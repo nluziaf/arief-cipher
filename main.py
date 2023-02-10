@@ -35,13 +35,11 @@ class AriefCipher:
 
 
 select_operation = input("Encode (e) or Decode (d)? :")
-if select_operation == "e":
-    any_string = input("Insert any string you would like to encode:")
-    name = AriefCipher().encode(any_string)
 if select_operation == "d":
     any_string = input("Insert any string you would like to decode:")
     name = AriefCipher().decode(any_string)
 else:
-    name = "The method is not recognised."
+    any_string = input("Insert any string you would like to encode:")
+    name = AriefCipher().encode(any_string)
 
 print(name)
